@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/syles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,36 +26,39 @@
     <header>
       <div class="container flex">
         <nav class="nav-menu">
-          <a class="header-logo-link" href="./index.html"
-            ><p class="header-logo">
-              <span class="header-logo-web">Web</span>Studio
+          <a class="nav-menu__link" href="./index.html"
+            ><p class="nav-menu__logo nav-menu__logo--part2">
+              <span class="nav-menu__logo nav-menu__logo--part1">Web</span
+              >Studio
             </p>
           </a>
-          <ul class="list-settings">
-            <li class="menu-list no-margin-left">
-              <a class="menu-list-item" href="./index.html">Студия</a>
+          <ul class="nav-list">
+            <li class="nav-list__element no-margin-left">
+              <a class="nav-list__link" href="./index.html">Студия</a>
             </li>
-            <li class="menu-list">
-              <a class="menu-list-item active" href="./portfolio.html"
+            <li class="nav-list__element">
+              <a
+                class="nav-list__link nav-list__link--active"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="menu-list">
-              <a class="menu-list-item" href="">Контакты</a>
+            <li class="nav-list__element">
+              <a class="nav-list__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list-settings-contacts">
-          <li class="menu-list">
-            <a class="contact-list-item-mail" href="mailto:info@devstudio.com">
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__mail" href="mailto:info@devstudio.com">
               <svg class="mail-icon">
                 <use href="./images/symbol-defs.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="menu-list">
-            <a class="contact-list-item-phone" href="tel:+380991111111">
+          <li class="header-contacts__item">
+            <a class="header-contacts__phone" href="tel:+380991111111">
               <svg class="phone-icon">
                 <use href="./images/symbol-defs.svg#icon-smartphone-1"></use>
               </svg>
@@ -69,210 +72,222 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Наши проекты</h1>
-          <ul class="list-settings-buttons">
-            <li class="button-item">
-              <button type="button" class="button">Все</button>
+          <ul class="filtres-list">
+            <li class="filtres-list__item">
+              <button type="button" class="filtres-list__button">Все</button>
             </li>
-            <li class="button-item">
-              <button type="button" class="button">Веб-сайты</button>
+            <li class="filtres-list__item">
+              <button type="button" class="filtres-list__button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="button-item">
-              <button type="button" class="button">Приложения</button>
+            <li class="filtres-list__item">
+              <button type="button" class="filtres-list__button">
+                Приложения
+              </button>
             </li>
-            <li class="button-item">
-              <button type="button" class="button">Дизайн</button>
+            <li class="filtres-list__item">
+              <button type="button" class="filtres-list__button">Дизайн</button>
             </li>
-            <li class="button-item">
-              <button type="button" class="button">Маркетинг</button>
+            <li class="filtres-list__item">
+              <button type="button" class="filtres-list__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
-          <ul class="list-projects">
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+          <ul class="projects-list">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/Technocrack.jpg"
                     alt="Technocrack"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Технокряк</h2>
-                  <p class="project-description">Веб-сайт</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">Технокряк</h2>
+                  <p class="project-description__type">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/NewOrleanVsGoldenStar.jpg"
                     alt="NewOrleanVsGoldenStar"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
-                  <p class="project-description">Дизайн</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-description__type">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/Seafood.jpg"
                     alt="Seafood"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Ресторан Seafood</h2>
-                  <p class="project-description">Приложение</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">Ресторан Seafood</h2>
+                  <p class="project-description__type">Приложение</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/PrimeProject.jpg"
                     alt="PrimeProject"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Проект Prime</h2>
-                  <p class="project-description">Маркетинг</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">Проект Prime</h2>
+                  <p class="project-description__type">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/BoxesProject.jpg"
                     alt="BoxesProject"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Проект Prime</h2>
-                  <p class="project-description">Маркетинг</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">Проект Prime</h2>
+                  <p class="project-description__type">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/InspirationHasNoBorders.jpg"
                     alt="InspirationHasNoBorders"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Inspiration has no Borders</h2>
-                  <p class="project-description">Веб-сайт</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="project-description__type">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/LimitedEdition.jpg"
                     alt="LimitedEdition"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Издание Limited Edition</h2>
-                  <p class="project-description">Дизайн</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="project-description__type">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/LabProject.jpg"
                     alt="LabProject"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Проект LAB</h2>
-                  <p class="project-description">Маркетинг</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">Проект LAB</h2>
+                  <p class="project-description__type">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="project-cards">
-              <a class="procject-cards-link no-padding cards-shadow" href=""
-                ><div class="project-hover-wrap">
+            <li class="projects-list__card">
+              <a class="projects-list__link" href=""
+                ><div class="slider">
                   <img
                     width="370"
                     height="294"
                     src="images/GrowingBusiness.jpg"
                     alt="GrowingBusiness"
                   />
-                  <p class="project-wrap-text">
+                  <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="project-name">Growing Business</h2>
-                  <p class="project-description">Приложение</p>
+                <div class="project-description">
+                  <h2 class="project-description__name">Growing Business</h2>
+                  <p class="project-description__type">Приложение</p>
                 </div></a
               >
             </li>
@@ -281,7 +296,7 @@
       </section>
     </main>
     <footer class="footer-background">
-      <div class="container flex baseline">
+      <div class="container footer-box">
         <div>
           <a class="footer-logo-link" href="./index.html">
             <span class="footer-logo-web">Web</span>Studio
@@ -341,7 +356,7 @@
         </div>
         <div>
           <span class="follow-text">Подпишитесь на рассылку</span>
-          <div class="flex baseline">
+          <div class="footer-follow-telegram">
             <input
               placeholder="E-mail"
               class="mail-input"
@@ -351,7 +366,7 @@
             <button type="submit" class="button-telegram">
               Подписаться
               <svg class="svg-telegram">
-                <use href="/images/symbol-defs.svg#icon-icon-send"></use>
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
           </div>

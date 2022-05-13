@@ -396,10 +396,6 @@ header {
   text-transform: uppercase;
 }
 
-.baseline {
-  align-items: baseline;
-}
-
 .button-telegram {
   width: 200px;
   height: 50px;
@@ -576,11 +572,13 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 /*----------------------------- SECTION-4 -----------------------------*/
 
 .cards-wdw {
   margin-right: 30px;
 }
+
 .cards {
   margin-right: 30px;
   background: var(--white-color);
@@ -825,7 +823,6 @@ header {
   justify-content: center;
     align-items: center;
       flex-wrap: wrap;
-}
 }
 
 .policy-text {
